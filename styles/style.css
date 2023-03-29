@@ -51,7 +51,7 @@ nav ul li a{
     transition: ease-in font-size 100ms;
 }
 nav ul li a:hover{
-    font-size: 1.5rem;
+    font-size: 1.44rem;
     transition: ease-in font-size 100ms;
 }
 .header__calltoaction{
