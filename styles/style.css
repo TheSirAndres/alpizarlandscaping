@@ -59,7 +59,7 @@ nav div ul li a{
 nav ul li a:hover{
     font-size: 1.44rem;
     transition: ease-in font-size 100ms; */
-}
+/* } */
 .header__calltoaction{
     padding: 10px 10px;
     border: 2px solid var(--brown);
