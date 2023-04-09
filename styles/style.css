@@ -163,3 +163,13 @@ nav img{
     background-size: cover;
 }
 
+
+/* services section------------------------------------------- */
+
+
+.services{
+    background-color: var(--brown);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
