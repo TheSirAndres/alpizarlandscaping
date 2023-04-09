@@ -120,6 +120,7 @@ nav img{
 /* cards section -----------------------------------------------*/
 .cards{
     background-color: var(--brown);
+    height: 180px;
 }
 .cards__container{
     display: flex;
@@ -172,4 +173,100 @@ nav img{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.services h3{
+     font-size: 2.6rem;
+     color: var(--base);
+     font-weight: 700;
+}
+.services__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: row;
+}
+.services__container div{
+    width: 384px;
+    height: 484px;
+    background-color: var(--green);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services__container div img{
+    width: 300px;
+    height: 200px;
+    border: var(--brown) solid 3px;
+    border-radius: 10px;
+    margin-top: 50px;
+    object-fit: cover;
+}
+.services__container div h4{
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: var(--base);
+    text-align: center;
+}
+.services__container div a{
+    text-decoration: none;
+    color: var(--base);
+    font-size: 2.2rem;
+    font-weight: 300;
+    padding: 5px 30px;
+    border: var(--brown) solid 2px;
+}
+
+
+/* seasonal section ---------------------------------------------*/
+
+
+.seasonal{
+    background-color: var(--dark-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.seasonal h3{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--base);
+    margin-top: 100px;
+}
+.seasonal__first{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-top: 50px;
+}
+.seasonal img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    justify-self: center;
+}
+.seasonal div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.seasonal div div h4{
+ font-size: 4rem;
+ text-align: center;
+ color: var(--base);
+ font-weight: 700;
+ margin-top: 20px;
+ /* margin-left: 40px; */
+}
+.seasonal div div a{
+    text-decoration: none;
+    color: var(--base);
+    font-size: 2.2rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 10px 30px;
+    border: var(--brown) solid 2px;
+}
+.seasonal div:nth-child(2){
+    grid-template-columns: 1.5fr 1fr;
 }
