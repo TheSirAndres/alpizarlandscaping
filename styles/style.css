@@ -69,7 +69,7 @@ nav img{
 .hero{
     top: 0px;
     width: 100%;
-    height: 100vh;;
+    height: 120vh;;
 }
 .hero__container{
     top: 0px;
@@ -115,3 +115,51 @@ nav img{
     transition-property: background-color;
     transition-duration: 800ms;
 }
+
+
+/* cards section -----------------------------------------------*/
+.cards{
+    background-color: var(--brown);
+}
+.cards__container{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -125px;
+}
+.cards__container div{
+    width: 200px;
+    height: 250px;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+.cards__container div h3{
+    font-size: 2.6rem;
+    color: var(--base);
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.cards__container div span{
+    width: 115.01px;
+    height: 114px;
+}
+.cards__container div:nth-child(1) span {
+    background-image: url(../sources/icons/reliable.png);
+    background-size: cover;
+}
+.cards__container div:nth-child(2) span {
+    background-image: url(../sources/icons/committed.png);
+    background-size: cover;
+}
+.cards__container div:nth-child(3) span {
+    background-image: url(../sources/icons/creatives.png);
+    background-size: cover;
+}
+.cards__container div:nth-child(4) span {
+    background-image: url(../sources/icons/professionals.png);
+    background-size: cover;
+}
+
