@@ -15,7 +15,7 @@ html{
 body{
     margin: 0;
 }
-.header__background{
+.hero__background{
     width: 100%;
     height: 100vh;
     z-index: 1;
@@ -35,7 +35,6 @@ nav img{
 }
 .navbar__container{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 /* .nav__bar{
