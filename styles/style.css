@@ -1,3 +1,4 @@
+/* Var for the colors -----------------------------------------------*/
 :root{
     --dark-green: #395144;
     --green: #4E6C50;
@@ -5,6 +6,7 @@
     --base: #F0EBCE;
     
 }
+/* assign the main font size to 10 px to work with REM and delete the margin */
 html{
     font-size: 10px;
     font-family: 'Inter', sans-serif;
@@ -12,6 +14,11 @@ html{
 body{
     margin: 0;
 }
+
+
+/* nav bar------------------------------------------------------------------- */
+
+
 nav{
     position: absolute;
     width: 100%;
@@ -36,7 +43,6 @@ nav img{
 .navbar__container ul{
     display: flex;
     list-style: none;
-    padding-left: ;
 }
 .navbar__container ul li a{
     text-decoration: none;
@@ -55,6 +61,11 @@ nav img{
     transition-property: background-color;
     transition-duration: 800ms;
 }
+
+
+/* hero section--------------------------------------------------------- */
+
+
 .hero{
     top: 0px;
     width: 100%;
