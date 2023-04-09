@@ -33,15 +33,22 @@ nav{
 nav img{
     margin-left: 50px;
 }
-nav ul{
+.navbar__container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+/* .nav__bar{
     margin-left: 45%;
     display: flex;
     align-items: center;
+    justify-content: end;
+    flex-direction: row;
 }
-nav ul li{
+nav div ul li{
     list-style: none;
 }
-nav ul li a{
+nav div ul li a{
     color: white;
     margin-right: 30px;
     text-decoration: none;
@@ -52,7 +59,7 @@ nav ul li a{
 }
 nav ul li a:hover{
     font-size: 1.44rem;
-    transition: ease-in font-size 100ms;
+    transition: ease-in font-size 100ms; */
 }
 .header__calltoaction{
     padding: 10px 10px;
