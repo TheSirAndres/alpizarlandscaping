@@ -18,8 +18,6 @@ body{
 .hero__container{
     font-size: 4rem;
     text-align: center;
-    z-index: 2;
-    display: grid;
     height: 100vh;
 }
 .hero__background{
