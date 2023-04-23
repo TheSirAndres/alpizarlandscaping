@@ -120,17 +120,18 @@ nav img{
 /* cards section -----------------------------------------------*/
 .cards{
     background-color: var(--brown);
-    height: 180px;
 }
 .cards__container{
     display: flex;
     justify-content: space-evenly;
     position: relative;
     top: -125px;
+    flex-flow: row wrap;
 }
 .cards__container div{
     width: 200px;
     height: 250px;
+    margin-bottom: 20px;
     background-color: var(--green);
     display: flex;
     flex-direction: column;
@@ -182,14 +183,14 @@ nav img{
 .services__container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
     grid-auto-flow: row;
     margin-bottom: 60px;
     
 }
 .services__container div{
-    width: 384px;
-    height: 484px;
+    min-width: 384px;
+    min-height: 484px;
     background-color: var(--green);
     margin: 30px;
     display: flex;
@@ -313,7 +314,9 @@ nav img{
         margin-left: 20px;
         font-size: 1.2rem;
     }
-    
+    .services__container{
+        grid-template-columns: 1fr;
+    }
 }
 @media (max-width: 608px){
     .navbar__container ul li a{
@@ -322,4 +325,8 @@ nav img{
     #buttonnavbar{
         display: block;
     }
+}
+@media (max-width: 1400px){
+    .services__container{
+        grid-template-columns: repeat(2, 1fr);
 }
