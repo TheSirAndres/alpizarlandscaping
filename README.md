@@ -13,7 +13,7 @@ A static website designed to:
 - Prioritize **SEO optimization** and **mobile responsiveness**
 - Demonstrate foundational web development skills (early-career project)
 
-[!IMPORTANT]  
+.[!IMPORTANT].  
 **Key Highlight**: Developed with simplicity in mind, emphasizing semantic HTML and CSS best practices over complex frameworks.
 
 ---
