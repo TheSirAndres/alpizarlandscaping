@@ -24,7 +24,7 @@ A static website designed to:
 - **Responsive Design**  
   Mobile-first approach with CSS media queries.
 - **Lightweight Form Submission**  
-  Uses [Formspree](https://formspree.io) (or similar service) to send email notifications to the owner.
+  Uses [FormSubmit](https://formsubmit.co) to send email notifications to the owner.
 - **Performance-Focused**  
   Minimal JS, optimized images, and fast load times.
 
