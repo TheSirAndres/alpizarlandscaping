@@ -14,7 +14,6 @@ A static website designed to:
 - Demonstrate foundational web development skills (early-career project)
 
 > [!IMPORTANT]
-> Useful information that users should know 
 **Key Highlight**: Developed with simplicity in mind, emphasizing semantic HTML and CSS best practices over complex frameworks.
 
 ---
