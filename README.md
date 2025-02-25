@@ -47,7 +47,7 @@ A static website designed to:
 - **Static Hosting**: Compatibility with GitHub Pages/Netlify.
 - **Zero Dependencies**: No external libraries or frameworks.
 
-[!caution]  
+> [!caution]  
 **Learning Context**: This project reflects early-career development skills. Code structure and practices may differ from advanced implementations.
 
 ---
@@ -59,7 +59,7 @@ A static website designed to:
 - Clean URL structure
 - Sitemap.xml (if included)
 
-[!note]  
+> [!note]  
 SEO audits conducted via [Google Lighthouse](https://developers.google.com/web/tools/lighthouse).
 
 ---
