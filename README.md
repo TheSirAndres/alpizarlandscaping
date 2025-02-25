@@ -1,6 +1,6 @@
 # Alpizar Landscaping Website
 
-![Project Banner](assets/images/banner.jpg) <!-- Replace with actual banner path if available -->
+![Project Banner](sources/images/logo.png)
 
 A professional website for **Alpizar Landscaping**, a New Jersey-based landscaping company. Built as a lightweight, SEO-optimized, and responsive site with minimal JavaScript, focusing on core HTML/CSS fundamentals.
 
@@ -13,7 +13,7 @@ A static website designed to:
 - Prioritize **SEO optimization** and **mobile responsiveness**
 - Demonstrate foundational web development skills (early-career project)
 
-[!important]  
+[!IMPORTANT]  
 **Key Highlight**: Developed with simplicity in mind, emphasizing semantic HTML and CSS best practices over complex frameworks.
 
 ---
@@ -28,7 +28,7 @@ A static website designed to:
 - **Performance-Focused**  
   Minimal JS, optimized images, and fast load times.
 
-[!tip]  
+[!TIP]  
 **No JavaScript Fatigue**: Intentional avoidance of JS frameworks to align with project scope and learning goals.
 
 ---
