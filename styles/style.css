@@ -4,12 +4,13 @@
     --green: #4E6C50;
     --brown: #AA8B56;
     --base: #F0EBCE;
-    
+
 }
 /* assign the main font size to 10 px to work with REM and delete the margin */
 html{
     font-size: 10px;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     margin: 0;
@@ -25,7 +26,7 @@ nav{
     height: 80px;
     left: 0px;
     top: 0px;
-    background: rgba(57, 81, 68, 0.5);  
+    background: rgba(57, 81, 68, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -181,14 +182,16 @@ nav img{
      font-weight: 700;
 }
 .services__container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    /*grid-template-columns: repeat(3, 1fr);*/
     /* grid-template-rows: repeat(3, 1fr); */
-    grid-auto-flow: row;
+    /*grid-auto-flow: row;*/
     margin-bottom: 60px;
-    
+
 }
 .services__container div{
+    flex: 1 1 calc(30.33% - 20px);
     min-width: 384px;
     min-height: 484px;
     background-color: var(--green);
@@ -202,6 +205,14 @@ nav img{
     height: 200px;
     margin-top: 50px;
     object-fit: cover;
+}
+.services__container div:nth-child(1) img{
+    border-radius: 10px;
+    border: 3px solid #AA8B56;
+}
+.services__container div:nth-child(9) img{
+    border-radius: 10px;
+    border: 3px solid #AA8B56;
 }
 .services__container div h4{
     font-size: 2.6rem;
@@ -243,13 +254,16 @@ nav img{
     margin-top: 100px;
 }
 .seasonal__first{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
     margin-top: 50px;
     transition-property: background-color;
     transition-duration: 800ms;
+    width: 90%;
+    height: 400px;
+    background-image: url('../sources/images/spring.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.seasonal__first div a:hover{
+.seasonal__first a:hover{
     background-color: var(--brown);
     transition-property: background-color;
     transition-duration: 800ms;
@@ -260,13 +274,13 @@ nav img{
     object-fit: cover;
     justify-self: center;
 }
-.seasonal div div{
+.seasonal div{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.seasonal div div h4{
+.seasonal div h4{
  font-size: 4rem;
  text-align: center;
  color: var(--base);
@@ -274,7 +288,7 @@ nav img{
  margin-top: 20px;
  /* margin-left: 40px; */
 }
-.seasonal div div a{
+.seasonal div a{
     text-decoration: none;
     color: var(--base);
     font-size: 2.2rem;
@@ -284,49 +298,399 @@ nav img{
     border: var(--brown) solid 2px;
 }
 .seasonal__second{
-    display: flex;
-    margin-top: 50px;
+    transition-property: background-color;
+    transition-duration: 800ms;
+    width: 90%;
+    height: 400px;
+    background-image: url('../sources/images/snow.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 80px;
+
+
+
+    /*New*/
+    margin-bottom: 80px;
+
+
+
+
 }
-.seasonal__second img{
-    margin-right: 200px;
+.seasonal__second a:hover{
+    background-color: var(--brown);
+    transition-property: background-color;
+    transition-duration: 800ms;
 }
 
-@media (max-width: 854px){
-    .hero__container{
-        grid-template-columns: 1fr;
-    }
-    .hero__container h1{
-        font-size: 2.6rem;
-        line-height: 2.6rem;
-    }
-    .hero__info{
-        margin: 0px 8px
-    }
-    nav img{
-        margin-left: 20px;
-        width: 180px;
-        height: 100px;
-    }
-    .navbar__container {
-        margin-right: 20px;
-    }
-    .navbar__container ul li a{
-        margin-left: 20px;
-        font-size: 1.2rem;
-    }
-    .services__container{
-        grid-template-columns: 1fr;
-    }
+
+
+
+
+
+
+/*  New        */
+
+
+
+
+
+
+
+
+.seasonal__third{
+    transition-property: background-color;
+    transition-duration: 800ms;
+    width: 90%;
+    height: 400px;
+    background-image: url('../sources/images/springclean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
 }
-@media (max-width: 608px){
-    .navbar__container ul li a{
+.seasonal__third a:hover{
+    background-color: var(--brown);
+    transition-property: background-color;
+    transition-duration: 800ms;
+}
+
+
+
+/*about us ------------------------------------------------------------------------------------------------*/
+
+.about-us{
+    background-color: var(--green);
+    padding: 0;
+    margin: 0;
+}
+.about-us h4{
+    margin: 0;
+    color: var(--base);
+    font-size: 2.6rem;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 46px;
+}
+.about-us h5{
+    margin: 0;
+    color: var(--base);
+    font-size: 2.6rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 20%;
+}
+.about-us p{
+    color: var(--base);
+    font-size: 2rem;
+    font-weight: lighter;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.about-us p:last-child{
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 5%;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    background-color: var(--green);
+}
+
+
+/*Contact us & footer ---------------------------------------------------------------- */
+
+.contact-us{
+    background-color: var(--dark-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-us img{
+    width: 400px;
+    height: 240px;
+}
+.contact-us h4{
+    margin: 0;
+    color: var(--base);
+    font-size: 2.6rem;
+    text-align: center;
+    padding-bottom: 46px;
+}
+.contact-us p{
+    color: var(--base);
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.contact-us a{
+    color: var(--base);
+    font-size: 2rem;
+    font-weight: lighter;
+    text-decoration: none;
+    margin-bottom: 100px;
+}
+
+/*
+Form ----------------------------------------------------------------
+*/
+
+
+form{
+    color: var(--base);
+    font-size: 2rem;
+    font-weight: lighter;
+    text-align: center;
+}
+.form-submit{
+    color: var(--base);
+    background-color: #395144;
+    border-style: none;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 2rem;
+    border: #AA8B56 1px solid;
+    padding: 12px;
+    transition-property: background-color;
+    transition-duration: 800ms;
+}
+.form-submit:hover{
+    background-color: var(--brown);
+    transition-property: background-color;
+    transition-duration: 800ms;
+    cursor: pointer;
+}
+form input{
+    background-color: var(--base);
+    border-style: none;
+    cursor: pointer;
+}
+footer{
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer h4{
+    margin: 0;
+    padding-top: 20px;
+    color: var(--base);
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+}
+.follow-us{
+    display: flex;
+    justify-items: center;
+}
+.follow-us a:nth-child(1){
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-image: url(../sources/icons/icons8-facebook-200.png);
+    background-size: cover;
+}
+.follow-us a:nth-child(2){
+    width: 50px;
+    height: 50px;
+    background-image: url(../sources/icons/icons8-instagram-200.png);
+    background-size: cover;
+}
+
+
+
+
+
+
+/*Media Queries*/
+
+
+
+
+
+
+@media (max-width: 856px) {
+    .navbar__container ul li:nth-child(1){
         display: none;
     }
-    #buttonnavbar{
-        display: block;
+    .navbar__container ul li:nth-child(2){
+        display: none;
+    }
+    .navbar__container ul li:nth-child(3){
+        display: none;
+    }
+    .hero__container{
+        display: flex;
+        align-items: center;
+    }
+    .hero__info{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .hero__info h1{
+        margin-top: 20px;
+        line-height: 38px;
+        font-weight: 600;
+        font-size: 2.6rem;
+    }
+    .cards__container div{
+        width: 150px;
+        height: 200px;
+        margin-bottom: 20px;
+        background-color: var(--green);
+    }
+    .cards__container div h3{
+        font-size: 2rem;
+        color: var(--base);
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    .cards__container div span{
+        width: 95.01px;
+        height: 94px;
+    }
+    .about-us h5{
+        margin-left: 15%;
+    }
+    .about-us p{
+        padding-left: 15%;
+        padding-right: 10%;
     }
 }
-@media (max-width: 1400px){
-    .services__container{
-        grid-template-columns: repeat(2, 1fr);
+@media (max-width: 542px){
+    header img {
+        margin-left: 20px;
+        width: 140.46px;
+        height: 82px;
+    }
+    .navbar__container ul li:nth-child(4) a{
+        font-size: 1.2rem;
+        margin-left: 60px;
+    }
+    .about-us h5{
+        margin-left: 10%;
+    }
+    .about-us p{
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+    .contact-us img{
+        width: 200px;
+        height: 120px;
+    }
+    .contact-us h4{
+        font-size: 2rem;
+        padding-bottom: 46px;
+    }
+    .contact-us p{
+        font-size: 1.6rem;
+    }
+    .contact-us a{
+        font-size: 1.6rem;
+    }
+@media (max-width: 446px){
+    .navbar__container ul li:nth-child(4) a{
+        display: none;
+    }
+    .hero__info{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .seasonal div h4{
+        font-size: 3rem;
+    }
+    .seasonal div a{
+        font-size: 1.6rem;
+    }
+    .seasonal__first{
+        height: 300px;
+    }
+    .seasonal__second{
+        height: 300px;
+    }
+
+
+
+    /*new*/
+
+
+
+
+
+    .seasonal__third{
+        height: 300px;
+    }
+
+
+
+
+
+    .services__container div{
+        min-width: 300px;
+        min-height: 400px;
+        margin: 20px;
+    }
+    .services__container div img{
+        width: 270px;
+        height: 180px;
+        margin-top: 50px;
+    }
+    .services__container div h4{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .services__container div a{
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 5px 30px;
+    }
+    .about-us h5{
+        margin-left: 5%;
+        font-size: 2.2rem;
+    }
+    .about-us p{
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 1.6rem;
+    }
+    .about-us p:last-child{
+    padding-left: 3%;
+    padding-right: 1%;
+}
+}
+@media (max-width: 340px){
+    .services__container div{
+        min-width: 210px;
+        min-height: 350px;
+        margin: 10px;
+    }
+    .services__container div img{
+        width: 190px;
+        height: 126px;
+        margin-top: 50px;
+    }
+    .services__container div h4{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .services__container div a{
+        font-size: 1.6rem;
+        font-weight: 300;
+        padding: 5px 30px;
+    }
+    .services__container div:nth-child(1) img{
+    border-radius: 10px;
+    border: 2px solid #AA8B56;
+    }
+    .services__container div:nth-child(9) img{
+    border-radius: 10px;
+        border: 2px solid #AA8B56;
+    }
+    header img {
+        margin-left: 20px;
+        width: 100.46px;
+        height: 62px;
+    }
+}
 }
