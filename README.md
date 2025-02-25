@@ -13,7 +13,8 @@ A static website designed to:
 - Prioritize **SEO optimization** and **mobile responsiveness**
 - Demonstrate foundational web development skills (early-career project)
 
-.[!IMPORTANT].  
+> [!IMPORTANT]
+> Useful information that users should know 
 **Key Highlight**: Developed with simplicity in mind, emphasizing semantic HTML and CSS best practices over complex frameworks.
 
 ---
@@ -28,7 +29,7 @@ A static website designed to:
 - **Performance-Focused**  
   Minimal JS, optimized images, and fast load times.
 
-[!TIP]  
+> [!TIP]
 **No JavaScript Fatigue**: Intentional avoidance of JS frameworks to align with project scope and learning goals.
 
 ---
